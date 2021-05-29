@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 60B27FE1
+P 4800 3650
+F 0 "A?" H 4800 2561 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 4800 2470 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 4800 3650 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4800 3650 50  0001 C CNN
+	1    4800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF:NRF24L01_Breakout U?
+U 1 1 60B2911F
+P 2650 4050
+F 0 "U?" H 3029 4004 50  0000 L CNN
+F 1 "NRF24L01_Breakout" H 3029 4095 50  0000 L CNN
+F 2 "RF_Module:nRF24L01_Breakout" H 2800 4650 50  0001 L CIN
+F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 2650 3950 50  0001 C CNN
+	1    2650 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 4350 3150 4350
+Wire Wire Line
+	3150 4250 4300 4250
+Wire Wire Line
+	3150 4150 4300 4150
+Wire Wire Line
+	3150 4050 4300 4050
+Wire Wire Line
+	3150 3850 3700 3850
+Wire Wire Line
+	3700 3850 3700 3950
+Wire Wire Line
+	3700 3950 4300 3950
+$Comp
+L power:GND #PWR?
+U 1 1 60B2CB81
+P 4900 4950
+F 0 "#PWR?" H 4900 4700 50  0001 C CNN
+F 1 "GND" H 4905 4777 50  0000 C CNN
+F 2 "" H 4900 4950 50  0001 C CNN
+F 3 "" H 4900 4950 50  0001 C CNN
+	1    4900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B2D399
+P 4800 5200
+F 0 "#PWR?" H 4800 4950 50  0001 C CNN
+F 1 "GND" H 4805 5027 50  0000 C CNN
+F 2 "" H 4800 5200 50  0001 C CNN
+F 3 "" H 4800 5200 50  0001 C CNN
+	1    4800 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4650 4900 4950
+Wire Wire Line
+	4800 4650 4800 5200
+Wire Wire Line
+	2650 4650 2650 4850
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60B2E61D
+P 2650 4850
+F 0 "#PWR?" H 2650 4700 50  0001 C CNN
+F 1 "+3V3" H 2665 5023 50  0000 C CNN
+F 2 "" H 2650 4850 50  0001 C CNN
+F 3 "" H 2650 4850 50  0001 C CNN
+	1    2650 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60B2EEFD
+P 4900 2300
+F 0 "#PWR?" H 4900 2150 50  0001 C CNN
+F 1 "+3V3" H 4915 2473 50  0000 C CNN
+F 2 "" H 4900 2300 50  0001 C CNN
+F 3 "" H 4900 2300 50  0001 C CNN
+	1    4900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2650 4900 2300
+$Comp
+L power:+5V #PWR?
+U 1 1 60B307F8
+P 5000 2450
+F 0 "#PWR?" H 5000 2300 50  0001 C CNN
+F 1 "+5V" H 5015 2623 50  0000 C CNN
+F 2 "" H 5000 2450 50  0001 C CNN
+F 3 "" H 5000 2450 50  0001 C CNN
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2650 5000 2450
+$Comp
+L Analog:Joystick U?
+U 1 1 60B32635
+P 6450 4100
+F 0 "U?" H 6728 4696 50  0000 L CNN
+F 1 "Joystick" H 6728 4605 50  0000 L CNN
+F 2 "" H 6450 4100 50  0001 C CNN
+F 3 "" H 6450 4100 50  0001 C CNN
+	1    6450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3650 6200 3650
+Wire Wire Line
+	6200 3750 5300 3750
+$Comp
+L power:+5V #PWR?
+U 1 1 60B33A82
+P 5950 3200
+F 0 "#PWR?" H 5950 3050 50  0001 C CNN
+F 1 "+5V" H 5965 3373 50  0000 C CNN
+F 2 "" H 5950 3200 50  0001 C CNN
+F 3 "" H 5950 3200 50  0001 C CNN
+	1    5950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B33F36
+P 6100 2900
+F 0 "#PWR?" H 6100 2650 50  0001 C CNN
+F 1 "GND" H 6105 2727 50  0000 C CNN
+F 2 "" H 6100 2900 50  0001 C CNN
+F 3 "" H 6100 2900 50  0001 C CNN
+	1    6100 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 3350 6200 3350
+Wire Wire Line
+	6200 3450 5950 3450
+Wire Wire Line
+	5950 3450 5950 3200
+Wire Wire Line
+	6100 3350 6100 2900
+Wire Wire Line
+	2650 3450 2650 3250
+$Comp
+L power:GND #PWR?
+U 1 1 60B2BBC8
+P 2650 3250
+F 0 "#PWR?" H 2650 3000 50  0001 C CNN
+F 1 "GND" H 2655 3077 50  0000 C CNN
+F 2 "" H 2650 3250 50  0001 C CNN
+F 3 "" H 2650 3250 50  0001 C CNN
+	1    2650 3250
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
