@@ -114,17 +114,6 @@ F 3 "" H 5000 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5000 2650 5000 2450
-$Comp
-L Analog:Joystick U?
-U 1 1 60B32635
-P 6450 4150
-F 0 "U?" H 6728 4746 50  0000 L CNN
-F 1 "Joystick" H 6728 4655 50  0000 L CNN
-F 2 "" H 6450 4150 50  0001 C CNN
-F 3 "" H 6450 4150 50  0001 C CNN
-	1    6450 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 3650 6200 3650
 Wire Wire Line
@@ -171,5 +160,16 @@ F 2 "" H 2650 3250 50  0001 C CNN
 F 3 "" H 2650 3250 50  0001 C CNN
 	1    2650 3250
 	-1   0    0    1   
+$EndComp
+$Comp
+L NER:Joystick U?
+U 1 1 60B406FF
+P 6450 4150
+F 0 "U?" H 6678 4771 50  0000 L CNN
+F 1 "Joystick" H 6678 4680 50  0000 L CNN
+F 2 "" H 6450 4150 50  0001 C CNN
+F 3 "" H 6450 4150 50  0001 C CNN
+	1    6450 4150
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
