@@ -16,14 +16,10 @@ void setup() {
   radio.openReadingPipe(1, pipe); // Get NRF24L01 ready to receive
   radio.startListening(); // Listen to see if information received
 
-  // setup output pins
-  pinMode(SERVO_PIN, OUTPUT);
-  pinMode(ESC_PIN, OUTPUT);
-
   // ESC arming sequence
-  digitalWrite(ESC_PIN, 255);
+  analogWrite(ESC_PIN, 255);
   delay(500);
-  digitalWrite(ESC_PIN, 0);
+  analogWrite(ESC_PIN, 0);
 }
 
 void loop() {
@@ -31,8 +27,8 @@ void loop() {
     radio.read(ReceivedMessage, 1); // Read information from the NRF24L01
 
     // set motor power
-    digitalWrite(SERVO_PIN, ReceivedMessage[0]);
+    analogWrite(SERVO_PIN, ReceivedMessage[0]);
     // set steering angle
-    digitalWrite(ESC_PIN, ReceivedMessage[1]);
+    analogWrite(ESC_PIN, ReceivedMessage[1]);
   }
 }
